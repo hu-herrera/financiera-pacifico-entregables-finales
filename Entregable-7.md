@@ -1,12 +1,12 @@
 # Entregable 7 — Presupuesto, TCO, despliegue y migración
-**Financiera Pacífico | Versión 3.0 | Octubre 2026 | Escenario económico académico preliminar**
+**Financiera Pacífico | Versión 4.0 | Octubre 2026 | Documento académico consolidado: costos condicionados**
 
 ## 7.1 Alcance y advertencia de fuentes
 **23 sedes:** Casa Matriz + 22 sucursales. ANTES: **2 MPLS en CM + 22 MPLS en sucursales = 24 enlaces de 100 Mbps**. DESPUÉS: **0 MPLS y 0 OneWeb**; Starlink, Amazon Leo, Entel 5G y GTD 4G/5G. El caso original considera 22 sedes y $160.000.000 CLP de presupuesto de referencia. La ampliación y las tarifas siguientes son **supuestos del equipo**, no cotizaciones formales. El profesor permite superar el presupuesto si se fundamenta.
 
 **Amazon Leo:** se asume habilitación futura en Chile para el ejercicio; no se afirma disponibilidad actual ni que contratarlo en EE. UU. autorice operar en Chile. Los valores económicos de Amazon Leo en esta versión proceden del **modelo académico anterior**, no de una tarifa pública estadounidense verificada. Antes de entrega definitiva deben sustituirse por una referencia fechada o conservarse explícitamente como estimación.
 
-## 7.2 Inventario CAPEX maestro
+## 7.2 Inventario CAPEX histórico, sustituido por el escenario vigente de 7.12 a 7.14
 La versión E7 V3 anterior presupuestaba 22 NGFW ($39.600.000), lo que no cubría 23 sedes ni alta disponibilidad en CM. Se corrige a **24 NGFW** (22 sucursales + 2 CM), usando **$1.800.000 por unidad como supuesto heredado**.
 
 | Partida | Cantidad | Precio unitario CLP | Total CLP | Clasificación |
@@ -245,3 +245,7 @@ No existe evidencia suficiente para declarar un único TCO o payback «definitiv
 **Limitación de resiliencia:** Entel advierte que la salida de la red antártica hacia el continente es satelital. En consecuencia, no se debe presentar Entel 5G como diversidad física garantizada frente a Starlink o Amazon Leo: un evento de segmento satelital, energía o transporte podría afectar más de una ruta. Incluir en E6 un escenario de fallo correlacionado y distinguir *acceso radio 5G* de *backhaul satelital*. La existencia de cobertura pública no demuestra SLA, IP pública fija, velocidad garantizada ni un plan corporativo contratado.
 
 **Fuentes oficiales:** [Entel, despliegue 5G Antártica, 18-03-2024](https://informacioncorporativa.entel.cl/comunicados-de-prensa/la-compania-desplego-la-ultima-tecnologia-en-todo-el-territorio-entel-es-pionera-en-la-entrega-de-conectividad-5g-en-la-antartica); [Entel, dos años de 5G, 09-04-2026](https://informacioncorporativa.entel.cl/comunicados-de-prensa/instagram-facebook-y-tiktok-son-las-aplicaciones-mas-usadas-en-la-antartica); [FACH, 15-03-2024](https://fach.mil.cl/fuerza-aerea-de-chile-participo-en-la-puesta-en-marcha-de-la-red-de); [Entel, topología de red y transporte satelital](https://informacioncorporativa.entel.cl/robustez-red).
+
+
+## Nota de cierre documental v4.0
+Este entregable integra el escenario académico de 23 sedes, distingue los hechos del caso original de las hipótesis del equipo y se considera **cerrado para la etapa de diseño documental**. El presupuesto de E7 es un modelo de escenarios, no una cotización vinculante. Amazon Leo sigue siendo disponibilidad futura hipotética. Entel 5G existe públicamente en Base Frei, pero su acceso WAN empresarial no está contratado. El prototipo y las mediciones de E6 quedan para la **etapa siguiente de implementación y pruebas del simulador**, sin resultados inventados. Las familias de adquisición son Catalyst 8300 y PA-1400, con licencias y compatibilidad pendientes de cotización. Las tablas históricas de E7 no deben usarse como presupuesto de compra.
