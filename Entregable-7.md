@@ -134,3 +134,46 @@ Las seis sucursales de crecimiento futuras son capacidad reservada, **no forman 
 - Starlink: [servicios de prioridad](https://starlink.com/business/service-plans) y [condiciones de prioridad en Chile](https://starlink.com/cl/support/article/d3dcd79f-c332-63e7-9204-3c3ec4f104ae). Los precios visibles dependen del país, volumen de datos y plan; no equiparar un precio de itinerancia residencial a contrato empresarial.
 
 **Consecuencia para este documento:** toda mención de ISR 4461, PA-850, sus módulos y sus precios debe leerse exclusivamente como **antecedente histórico del borrador anterior**, no como equipamiento de compra aprobado. Para el diseño de adquisición se adopta como **candidato Cisco Catalyst 8300 y Palo Alto PA-1400**; las cantidades de equipos siguen siendo hipótesis de dimensionamiento. Los costos basados en hardware retirado de venta **no representan el presupuesto definitivo**. El cierre financiero requiere cotización o escenarios explícitos con precios estimados para las familias nuevas.
+
+
+## 7.12 Actualización de precios observables y escenario de adquisición vigente (15-10-2026)
+**Esta sección prevalece sobre los valores de hardware obsoleto de §7.2 y el TCO heredado de §7.5.** Es una **estimación con precios publicados de referencia**, no una oferta vinculante para Chile. Se documentan moneda, unidades, fecha y fuente; transporte, impuestos, contratos de soporte y configuración pueden modificar sustancialmente el resultado.
+
+### Fuentes de precios con evidencia consultable
+| Ítem | Referencia observable | Fecha/alcance | Fuente |
+|---|---:|---|---|
+| Cisco Catalyst C8300-2N2S-4T2X | **USD 18.249,61** por router, oferta minorista | Página actualizada 01-10-2026; EE. UU., sin licencia/soporte garantizados | [Neutron USA](https://www.neutronusa.com/prod.cfm/5026629) |
+| Cisco C8300-2N2S-4T2X | USD 6.632,00 como oferta de otro vendedor; precio de lista USD 36.661,38 | Gran dispersión comercial; referencia no cotizada | [ITPrice](https://itprice.com/cisco-gpl/c8300-2n2) |
+| Cisco C9200L-48T-4G-E | **CLP 2.567.140** por switch, pago transferencia | Publicación minorista Chile, sin servicios adicionales confirmados | [SP Digital](https://www.spdigital.cl/cisco-switch-10-gigabit-ethernet-48-10-gigabit-ethernet-c9200l-48t-4g-e/) |
+| Cisco C9200L-48P-4G-E + DNA 3 años | **CLP 6.376.900** por switch | Publicación Chile; sin existencias; modelo PoE, no comparable al 48T | [TecnoShopping](https://www.tecnoshopping.cl/catalyst-9200l-48-port-poe-e-licencia-dna-e/) |
+| Palo Alto PA-1410 | **USD 4.894,00** por firewall, precio visible de tercero | Publicación Newegg; revisar SKU, licencias y vendedor | [Newegg](https://www.newegg.com/p/pl?N=100158106&d=pa-1410) |
+| Threat Prevention PA-1410 | **USD 2.902,79** listado de suscripción | Plazo de licencia no verificable en el extracto; **NO multiplicar como precio de cinco años** | [Newegg](https://www.newegg.com/p/pl?N=100158106&d=pa-1410) |
+| Starlink Priority | Tarifas publicadas por país y franquicia | No extrapolar página de Puerto Rico a Chile | [Starlink](https://starlink.com/business/service-plans) |
+| Entel Empresas móvil | Planes públicos desde CLP 21.990 / 25.990 según condiciones | **Son planes móviles**, no SLA WAN empresarial garantizado | [Entel Empresas](https://empresas.entel.cl/movil) |
+| GTD | Comercializa planes empresariales Starlink y soporte | No constituye prueba de oferta GTD celular 4G/5G en todas las sedes | [GTD](https://www.gtd.cl/portabilidad-starlink-empresas) |
+
+**Tipo de cambio exclusivamente de cálculo:** CLP **950 por USD** (hipótesis redondeada, **no dólar observado certificado del 15-10-2026**). Para evitar mezclar impuestos, todos los importes deben normalizarse a neto/IVA antes de compra; los precios de comercio electrónico aquí se usan como referencias nominales y **no están homologados fiscalmente**.
+
+### Hardware base con referencias actuales
+| Partida | Cantidad | Precio referencia CLP | Subtotal CLP |
+|---|---:|---:|---:|
+| Catalyst C8300-2N2S-4T2X | 25 | 17.337.130 aprox. (USD 18.249,61 × 950) | **433.428.238** |
+| Catalyst C9200L-48T-4G-E | 46 | 2.567.140 | **118.088.440** |
+| Palo Alto PA-1410 | 24 | 4.649.300 (USD 4.894 × 950) | **111.583.200** |
+| **Subtotal hardware principal** | | | **663.099.878** |
+
+El precio de C8300 se usa deliberadamente como referencia conservadora frente a la oferta mucho más baja de ITPrice. La variación evidencia por qué es necesaria cotización de canal. **El switch 48T no ofrece el mismo suministro PoE que un 48P**, por lo que no es una sustitución funcional automática: si la telefonía necesita PoE, deben incluirse switches PoE o inyectores y recalcular.
+
+### Costos de adquisición no cubiertos por ese subtotal
+- Equipos de acceso celular compatibles, SIM/planes y posibles gateways externos.
+- Terminales y kits Starlink con instalación, montaje y alimentación.
+- Terminales Amazon Leo, no cotizables de forma verificable para Chile en este ejercicio.
+- Licencias Cisco y Palo Alto, especialmente Threat Prevention **para cinco años**, soporte Smart Net/Solution Support y soporte PAN.
+- Instalación, capacitación, transporte a Rapa Nui/Antártica, contingencia, energía de respaldo, IVA y tipo de cambio contractual.
+
+**Escenario presupuestario mínimo ilustrativo (NO cotización):** hardware principal CLP 663.099.878 + provisión de CLP 30.000.000 licencias iniciales + CLP 37.000.000 servicios + CLP 16.000.000 contingencia + CLP 8.088.000 terminales Starlink heredados + CLP 4.800.000 acceso celular heredado = **CLP 758.987.878**. **Excluye expresamente** terminales Amazon Leo, soporte/licencias adicionales a cinco años, impuestos y varios gastos; por tanto **no es CAPEX total definitivo ni techo presupuestario**. El monto del hardware principal supera por sí solo el presupuesto inicial de CLP 160 millones.
+
+### Efecto en la evaluación económica
+El TCO de CLP 625.778.000 de §7.5 queda **invalidado como estimación de adquisición vigente**, pues su CAPEX de CLP 224.448.000 usaba equipos fuera de venta. Si se toma **solo a modo de prueba aritmética** el subtotal mínimo ilustrativo CLP 758.987.878 y se suma el OPEX heredado CLP 401.330.000, resulta **CLP 1.160.317.878**, **sin** terminales Leo, licencias de cinco años verificadas, impuestos y otros conceptos. No presentar esta suma como TCO completo. El costo MPLS de CLP 3.326.400.000 sigue siendo un supuesto de CLP 2.310.000 por enlace/mes, no una cotización, por lo que **no corresponde publicar ROI o payback definitivos**.
+
+**Decisión de ingeniería:** mantener la arquitectura sin MPLS y documentar que la viabilidad económica depende de cotizaciones formales, cobertura y sustitución de precios supuestos. La evidencia disponible permite defender un **presupuesto de referencia condicionado**, no un presupuesto contractual cerrado.
