@@ -177,3 +177,30 @@ El precio de C8300 se usa deliberadamente como referencia conservadora frente a 
 El TCO de CLP 625.778.000 de §7.5 queda **invalidado como estimación de adquisición vigente**, pues su CAPEX de CLP 224.448.000 usaba equipos fuera de venta. Si se toma **solo a modo de prueba aritmética** el subtotal mínimo ilustrativo CLP 758.987.878 y se suma el OPEX heredado CLP 401.330.000, resulta **CLP 1.160.317.878**, **sin** terminales Leo, licencias de cinco años verificadas, impuestos y otros conceptos. No presentar esta suma como TCO completo. El costo MPLS de CLP 3.326.400.000 sigue siendo un supuesto de CLP 2.310.000 por enlace/mes, no una cotización, por lo que **no corresponde publicar ROI o payback definitivos**.
 
 **Decisión de ingeniería:** mantener la arquitectura sin MPLS y documentar que la viabilidad económica depende de cotizaciones formales, cobertura y sustitución de precios supuestos. La evidencia disponible permite defender un **presupuesto de referencia condicionado**, no un presupuesto contractual cerrado.
+
+
+## 7.13 Evidencia comercial adicional: conectividad y sedes extremas (15-10-2026)
+**Fuentes públicas verificadas en esta revisión**; precios de planes minoristas y licitaciones no equivalen a ofertas empresariales negociadas para Financiera Pacífico.
+
+| Servicio / referencia | Precio publicado | Alcance real de la fuente | Aplicación al proyecto |
+|---|---:|---|---|
+| Starlink Business Fixed Site Local Priority 50 GB | USD 55/mes | Sitio comercial internacional; no tarifa chilena confirmada | Referencia de respaldo, volumen posiblemente insuficiente |
+| Starlink Business Fixed Site Local Priority 500 GB | USD 155/mes | Sitio comercial internacional; velocidades máximas no garantizadas | Referencia para modelar demanda, no precio contractual Chile |
+| Starlink Business Fixed Site Local Priority 1 TB | USD 280/mes | Sitio comercial internacional | Referencia de mayor consumo, verificar dirección y plan local |
+| Starlink Business Fixed Site Local Priority 2 TB | USD 530/mes | Sitio comercial internacional | Referencia para sedes de mayor consumo |
+| Entel — Plan Libre Full | CLP 24.990/mes sin descuento temporal | Oferta móvil pública, no enlace corporativo dedicado ni SLA WAN | Solo cota orientativa de SIM, no servicio empresarial comparable |
+| GTD — comparador de planes | Sin precio WAN celular comparable verificable | Publica variables comerciales pero no prueba cobertura celular propia por sede | Mantener partida como supuesto, pedir cotización |
+| Base antártica chilena — licitación de servicio Starlink Prioridad Global 500 GB | **CLP 729.659 por mes**, adjudicación pública de 4 meses | Base Aérea Antártica Tte. Luis Carvajal Villarroel, **no Base Frei**; oferta para institución pública | **Referencia de orden de magnitud para logística y plan polar**, no garantía de cobertura en Base Frei |
+
+**Fuente de la licitación antártica:** [TodoLicitaciones, proceso 3268-31-LE26](https://www.todolicitaciones.cl/licitacion/3268-31-LE26). El valor mensual es de la adjudicación reportada, no debe extrapolarse a todas las sucursales ni confundirse con plan terrestre. Esta evidencia muestra que una única tarifa plana nacional puede subestimar sedes extremas.
+
+**Fuentes de operadores:** [Starlink Fixed Site](https://starlink.com/business/fixed-site), [Starlink Chile Enterprise](https://starlink.com/cl/support/article/d6b785b3-7354-0fc8-4e10-6b0c187bff74), [Entel comparador oficial](https://www.entel.cl/comparador-de-planes), [GTD comparador oficial](https://www.gtd.cl/comparador). Starlink indica que la disponibilidad se debe comprobar por dirección y que el SLA de red de planes Priority es 99,9%; no se debe equiparar al objetivo corporativo de 99,95% por sucursal sin redundancia adicional.
+
+**Amazon Leo:** [Amazon anunció prueba empresarial](https://www.aboutamazon.com/news/amazon-leo/amazon-leo-satellite-internet-ultra-pro); una [actualización sectorial del 12-10-2026](https://www.lightreading.com/satellite/amazon-leo-still-tracking-for-2026-service-launch-as-satellite-production-ramps) indica que la puesta en servicio comercial seguía prevista para fines de 2026. Ninguna de estas fuentes demuestra precio estadounidense público ni disponibilidad en Chile en octubre de 2026. En consecuencia, **no corresponde afirmar que ya existe tarifa de Amazon Leo que pueda contratarse en EE. UU. para usar en Chile**.
+
+### Efecto sobre el escenario de costos
+La partida de Starlink anterior (CLP 96 millones en cinco años) equivale a CLP 400.000 por terminal y mes si se distribuye entre 24 terminales durante 60 meses: **96.000.000 / (24 × 60) = CLP 66.667/mes**, no CLP 400.000. Es una referencia promedio de **CLP 66.667 mensuales por terminal**; no se debe describir como precio publicado. El caso polar observado (CLP 729.659/mes) es más de diez veces ese promedio. **El OPEX debe segmentarse por tipo de sede y plan**, con un escenario específico para S21/S22, antes de cerrarse.
+
+El costo Starlink Business internacional de USD 155/mes (500 GB), convertido con la hipótesis de 950 CLP/USD, es **CLP 147.250/mes** antes de impuestos y ajustes. Para 24 accesos × 60 meses serían **CLP 212.040.000** solo por esa conectividad, frente a CLP 96.000.000 heredados. Es un **escenario de sensibilidad**, no cotización de Chile; no se sumará automáticamente al presupuesto definitivo.
+
+**Conclusión de validación:** la red multiservicio sigue siendo una alternativa técnica de estudio, pero los precios y la viabilidad de sedes extremas necesitan segmentación. No se recomienda usar el ahorro o payback preliminar como resultado final.
