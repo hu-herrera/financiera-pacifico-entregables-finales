@@ -69,3 +69,13 @@ Se añadieron al E7 fuentes públicas de Starlink Business Fixed Site, Entel, GT
 **Fuentes:** [Starlink Business](https://starlink.com/business/fixed-site), [Entel](https://www.entel.cl/comparador-de-planes), [GTD](https://www.gtd.cl/comparador), [licitación antártica](https://www.todolicitaciones.cl/licitacion/3268-31-LE26), [Amazon Leo](https://www.aboutamazon.com/news/amazon-leo/amazon-leo-satellite-internet-ultra-pro).
 
 **Pendiente:** matriz comercial por sede, cotizaciones formales y recálculo completo de CAPEX/OPEX/TCO; el estado «definitivo» sigue bloqueado por falta de evidencia.
+
+
+## Revisión de licencias y sensibilidad comercial — 15-10-2026
+1. **Cisco C8300 Edge Platforms no debe confundirse con C8300-uCPE**: el anuncio de EoL para uCPE no invalida por sí solo el SKU C8300-2N2S-4T2X. [Cisco uCPE EoL](https://team-development.cisco.com/c/en/us/products/collateral/routers/catalyst-8300-series-edge-ucpe/cat8300-series-edge-ucpe-select-nfvis-licenses-eol.html).
+2. La [guía Cisco 8300/8200](https://team-development.cisco.com/c/en/us/products/collateral/routers/catalyst-8300-series-edge-platforms/cat-8300-8200-series-edge-plat-og.html) exige licencias DNA/alternativa aplicable, y distingue soporte de licencias del soporte de hardware. **La cifra del router sin software no es costo instalado.**
+3. Precio PA-1410 de distribuidor [Zones](https://www.zones.com/site/product/index.html?id=110975712&page_name=product_tech_spec) USD 11.663,99 frente a USD 4.894 en otra fuente. El E7 muestra dos escenarios de hardware principal: **CLP 663.099.878 a 817.455.650**; no son cotizaciones ni totales de proyecto.
+4. [Starlink Puerto Rico](https://starlink.com/es-pr/business/service-plans) muestra USD 142/mes por 500 GB, distinto de otra referencia internacional; **no aplicar tarifas extranjeras como precio chileno**. [Starlink Chile](https://starlink.com/cl/support/article/d6b785b3-7354-0fc8-4e10-6b0c187bff74) informa SLA Priority de red de 99,9%.
+5. [Entel Empresas](https://empresas.entel.cl/movil) menciona servicio satelital al celular para aplicaciones compatibles y excluye Antártica; no constituye enlace WAN 5G empresarial.
+
+**Siguiente cierre necesario:** cotizar hardware y licencias exactas para 5 años; clasificar switches según PoE; definir por sede qué enlaces existen y cuáles son hipótesis; preparar una tabla de costos por año y escenario que no mezcle tarifas públicas de distintos países con ofertas locales.
