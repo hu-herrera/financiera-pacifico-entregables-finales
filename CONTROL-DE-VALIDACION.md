@@ -1,0 +1,53 @@
+# Control de calidad y estado de entrega — Financiera Pacífico
+**Fecha de revisión:** 15 de octubre de 2026
+
+## Estado honesto
+Los siete entregables v3 están publicados. **Aún no son documentos definitivos técnicamente y financieramente validados**. Esta matriz distingue trabajo realizado de evidencia no disponible y evita afirmar que se realizaron cotizaciones, pruebas o verificaciones de cobertura inexistentes.
+
+## Decisiones coherentes en E1–E7
+| Regla | Valor |
+|---|---|
+| Alcance | 23 sedes: 1 CM + 22 sucursales |
+| Caso académico original | 22 sedes; expansión de 1 sede es decisión del equipo |
+| ANTES | 2 MPLS de 100 Mbps en CM + 22 MPLS de 100 Mbps = 24 |
+| DESPUÉS | 0 MPLS y 0 OneWeb |
+| Accesos candidatos | Starlink, Amazon Leo, Entel 5G, GTD 4G/5G |
+| Amazon Leo | Escenario futuro sujeto a autorización, cobertura y oferta comercial |
+| Inventario conceptual | 25 routers (24 activos + repuesto), 46 switches, 24 NGFW (2 CM + 22 sucursales) |
+| Direccionamiento | 10.70.0.0/16; seis sucursales adicionales reservadas |
+| Disponibilidad | 99,99% core y 99,95% sucursales, objetivos no resultados |
+| RTO | ≤5 minutos para fallas de enlace con respaldo disponible |
+| Prototipo | Simulador didáctico, no emulador de firmware |
+| Orden | Documentos primero; simulador después |
+
+## Hallazgos de validación oficial
+| Tema | Evidencia | Decisión |
+|---|---|---|
+| ISR 4461 | [Cisco EoL](https://www.cisco.com/c/en/us/products/collateral/routers/4000-series-integrated-services-routers-isr/isr4461-series-platform-eol.html): fin de venta 20-01-2025; soporte hasta 31-01-2030 | Descartar para nueva compra |
+| Catalyst 8300 | [Cisco catálogo](https://www.cisco.com/c/en/us/support/routers/catalyst-8300-series-edge-platforms/series.html): «Available Order» | Candidato preferente; cotizar |
+| PA-850 | [Palo Alto EoL](https://www.paloaltonetworks.com/services/support/end-of-life-announcements/hardware-end-of-life-dates): fin de venta 31-08-2024; fin de soporte 31-08-2029 | Descartar para nueva compra |
+| PA-1400 | [Palo Alto hardware](https://origin-docs.paloaltonetworks.com/hardware/pa-1400-hardware-reference/pa-1400-series-overview) | Candidato; dimensionar y cotizar |
+| Amazon Leo | [Amazon](https://www.aboutamazon.com/what-we-do/devices-services/amazon-leo): despliegue en curso | No afirmar tarifa comercial Chile ni cobertura confirmada |
+| Starlink Priority | [Planes](https://starlink.com/business/service-plans), [Chile](https://starlink.com/cl/support/article/d3dcd79f-c332-63e7-9204-3c3ec4f104ae) | Precio depende de región, plan, volumen y terminal; pedir oferta empresarial |
+
+## Pendientes que impiden una versión definitiva
+| Prioridad | Actividad | Estado | Evidencia necesaria |
+|---|---|---|---|
+| Crítica | Rehacer BOM con Cisco Catalyst 8300, PA-1400 y switches vigentes | Pendiente | Modelos exactos, cantidad, unitarios, licencias y soporte a cinco años |
+| Crítica | Validar costo de MPLS 100 Mbps por enlace | Pendiente | Cotización o rango defendible; $2.310.000/mes es supuesto, no tarifa |
+| Crítica | Verificar cobertura y tarifas Starlink, Entel, GTD por sede | Pendiente | Disponibilidad por dirección, ofertas, datos y SLA |
+| Crítica | Resolver Amazon Leo | Pendiente | Oferta comercial verificable o escenario explícitamente hipotético |
+| Crítica | Corregir TCO y ROI con BOM nuevo | Pendiente | Modelo de costos comparable con impuestos y años |
+| Alta | Verificar viabilidad Rapa Nui y Base Frei | Pendiente | Permisos, cobertura, logística, energía y clima |
+| Alta | Resolver HA física de CM y concentradores IPsec | Pendiente | Topología de interfaces y capacidad de equipos |
+| Alta | Ejecutar y registrar pruebas E6 | Pendiente | Simulador actualizado y logs reproducibles |
+| Alta | Actualizar simulador sin MPLS en DESPUÉS y sin OneWeb | Pendiente por acuerdo | Repositorio `hu-herrera/fin` actualizado después de cerrar documentos |
+| Media | Revisar lenguaje, diagramas, enlaces y numeración | Parcial | Revisión editorial integral |
+
+## Qué significan las cifras del E7 v3
+**$224.448.000 CAPEX, $401.330.000 OPEX a cinco años, $625.778.000 TCO**: son **cifras heredadas de un escenario preliminar**, con hardware descontinuado y precio Amazon Leo no verificado. **No son presupuesto definitivo**. El MPLS legado de $2.310.000 mensuales por enlace también es una hipótesis. No presentar el ahorro calculado como ahorro contratado.
+
+## Regla de publicación final
+Solo cambiar a «definitivo» después de que todas las partidas críticas estén respaldadas por fuentes o marcadas expresamente como supuestos de un escenario académico aceptado, que la aritmética esté conciliada, que la arquitectura tenga equipos viables y que E5/E6 separen claramente pruebas planificadas de resultados ejecutados.
+
+**No se han modificado el repositorio original ni el simulador.**
