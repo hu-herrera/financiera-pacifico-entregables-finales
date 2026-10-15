@@ -204,3 +204,36 @@ La partida de Starlink anterior (CLP 96 millones en cinco años) equivale a CLP 
 El costo Starlink Business internacional de USD 155/mes (500 GB), convertido con la hipótesis de 950 CLP/USD, es **CLP 147.250/mes** antes de impuestos y ajustes. Para 24 accesos × 60 meses serían **CLP 212.040.000** solo por esa conectividad, frente a CLP 96.000.000 heredados. Es un **escenario de sensibilidad**, no cotización de Chile; no se sumará automáticamente al presupuesto definitivo.
 
 **Conclusión de validación:** la red multiservicio sigue siendo una alternativa técnica de estudio, pero los precios y la viabilidad de sedes extremas necesitan segmentación. No se recomienda usar el ahorro o payback preliminar como resultado final.
+
+
+## 7.14 Correcciones de diligencia técnica y escenarios comerciales (15-10-2026)
+**Prevalece sobre referencias anteriores cuando haya contradicción.**
+
+### Diferencia crítica entre C8300 y C8300-uCPE
+El aviso de fin de venta del **Catalyst 8300 Edge uCPE** (modelo C8300-UCPE-1N20; venta hasta agosto de 2026) **no corresponde a toda la familia Catalyst 8300 Edge Platforms**. No se debe declarar obsoleto el C8300-2N2S-4T2X por ese aviso. [Aviso oficial Cisco para uCPE](https://team-development.cisco.com/c/en/us/products/collateral/routers/catalyst-8300-series-edge-ucpe/cat8300-series-edge-ucpe-select-nfvis-licenses-eol.html). Para comprar el C8300-2N2S-4T2X, verificar su SKU específico y la fecha de soporte vigente.
+
+**Licencias obligatorias:** la [guía oficial de pedido de Catalyst 8300/8200](https://team-development.cisco.com/c/en/us/products/collateral/routers/catalyst-8300-series-edge-platforms/cat-8300-8200-series-edge-plat-og.html) indica suscripciones Cisco DNA obligatorias para la plataforma, con tier y ancho de banda según funciones. Los precios de routers sin esas licencias **no son costos de implementación completos**. La guía distingue soporte de software de soporte del equipo físico; exigir ambas coberturas en la cotización.
+
+### Advertencia sobre precio de Palo Alto
+Un segundo distribuidor lista el **PA-1410 en USD 11.663,99**: [Zones](https://www.zones.com/site/product/index.html?id=110975712&page_name=product_tech_spec), frente a la referencia anterior de USD 4.894. La diferencia impide tomar el valor menor como precio representativo sin cotización. A tipo de cambio **supuesto** 950, 24 unidades costarían:
+- **Escenario bajo de hardware PA-1410:** 24 × USD 4.894 × 950 = **CLP 111.583.200**.
+- **Escenario alto de hardware PA-1410:** 24 × USD 11.663,99 × 950 = **CLP 265.938.972**.
+- **Diferencia entre escenarios:** **CLP 154.355.772**, **sin** licencias, soporte, impuestos ni logística.
+
+### Escenarios de hardware principal (no cotizaciones)
+| Partida | Escenario bajo CLP | Escenario alto CLP |
+|---|---:|---:|
+| 25 routers Catalyst 8300, referencia de E7 §7.12 | 433.428.238 | 433.428.238 |
+| 46 switches Catalyst 9200L 48T, referencia de E7 §7.12 | 118.088.440 | 118.088.440 |
+| 24 NGFW PA-1410 | 111.583.200 | 265.938.972 |
+| **Hardware principal** | **663.099.878** | **817.455.650** |
+
+**Advertencia:** la diferencia de precios es una sensibilidad, no un intervalo estadístico de mercado. La selección 48T puede requerir sustitución por 48P/PoE, por lo que ambos escenarios son **pisos incompletos** si hay teléfonos o puntos de acceso que demanden alimentación PoE.
+
+### Starlink y Entel: corrección de interpretación
+El [catálogo Starlink en español para Puerto Rico](https://starlink.com/es-pr/business/service-plans) publica **USD 142/mes para Prioridad Local 500 GB** y USD 257/mes para 1 TB al momento de consulta; difiere de referencias internacionales previas. Esto demuestra que **los precios varían por mercado** y **no deben aplicarse directamente a Chile**. Para un análisis de sensibilidad **no contractual**, 24 × 60 × USD 142 × 950 = **CLP 194.256.000** a cinco años para el nivel de 500 GB. Comparar con CLP 96.000.000 heredados; el incremento sería **CLP 98.256.000**. La [ayuda oficial de Starlink Chile](https://starlink.com/cl/support/article/d6b785b3-7354-0fc8-4e10-6b0c187bff74) aclara que se debe verificar cobertura por dirección y que el SLA de disponibilidad de red de Priority es **99,9%**, no la disponibilidad corporativa objetivo de 99,95%.
+
+La [oferta de Entel Empresas](https://empresas.entel.cl/movil) menciona planes SIM con importes desde CLP 21.990–25.990 IVA incluido bajo condiciones específicas. La cobertura **satelital al celular** se refiere a aplicaciones compatibles y **excluye Antártica**: no equivale a servicio WAN IP de 5G para router. **No usar esos valores como cotización de enlace de datos empresarial.**
+
+### Condición de aprobación financiera
+No existe evidencia suficiente para declarar un único TCO o payback «definitivo». Se conservan **escenarios numéricos trazables**, se invalidan afirmaciones de ahorro contractual y se exige precio empresarial chileno de hardware, licencias, soporte y conectividad antes de cerrar adquisiciones.
