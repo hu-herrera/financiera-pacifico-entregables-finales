@@ -1,5 +1,5 @@
 # Entregable 5 — Prototipo y demostración de la WAN
-**Financiera Pacífico | Versión 3.0 | Octubre 2026 | Estado: especificación para actualización posterior del simulador**
+**Financiera Pacífico | Versión 4.0 | Octubre 2026 | Estado: especificación para actualización posterior del simulador**
 
 ## 5.1 Objetivo y alcance
 El prototipo es un **simulador web didáctico** de la red de Financiera Pacífico. Permite mostrar topología, estado de enlaces, conmutación, segmentación, seguridad y métricas bajo parámetros controlados. **No ejecuta firmware Cisco IOS-XE ni Palo Alto PAN-OS**, no certifica interoperabilidad y sus valores no son mediciones de una red física.
@@ -89,3 +89,7 @@ El prototipo es una herramienta para exposición y aprendizaje; no se usarán va
 **Limitación de resiliencia:** Entel advierte que la salida de la red antártica hacia el continente es satelital. En consecuencia, no se debe presentar Entel 5G como diversidad física garantizada frente a Starlink o Amazon Leo: un evento de segmento satelital, energía o transporte podría afectar más de una ruta. Incluir en E6 un escenario de fallo correlacionado y distinguir *acceso radio 5G* de *backhaul satelital*. La existencia de cobertura pública no demuestra SLA, IP pública fija, velocidad garantizada ni un plan corporativo contratado.
 
 **Fuentes oficiales:** [Entel, despliegue 5G Antártica, 18-03-2024](https://informacioncorporativa.entel.cl/comunicados-de-prensa/la-compania-desplego-la-ultima-tecnologia-en-todo-el-territorio-entel-es-pionera-en-la-entrega-de-conectividad-5g-en-la-antartica); [Entel, dos años de 5G, 09-04-2026](https://informacioncorporativa.entel.cl/comunicados-de-prensa/instagram-facebook-y-tiktok-son-las-aplicaciones-mas-usadas-en-la-antartica); [FACH, 15-03-2024](https://fach.mil.cl/fuerza-aerea-de-chile-participo-en-la-puesta-en-marcha-de-la-red-de); [Entel, topología de red y transporte satelital](https://informacioncorporativa.entel.cl/robustez-red).
+
+
+## Nota de cierre documental v4.0
+Este entregable integra el escenario académico de 23 sedes, distingue los hechos del caso original de las hipótesis del equipo y se considera **cerrado para la etapa de diseño documental**. El presupuesto de E7 es un modelo de escenarios, no una cotización vinculante. Amazon Leo sigue siendo disponibilidad futura hipotética. Entel 5G existe públicamente en Base Frei, pero su acceso WAN empresarial no está contratado. El prototipo y las mediciones de E6 quedan para la **etapa siguiente de implementación y pruebas del simulador**, sin resultados inventados. Las familias de adquisición son Catalyst 8300 y PA-1400, con licencias y compatibilidad pendientes de cotización. Las tablas históricas de E7 no deben usarse como presupuesto de compra.
