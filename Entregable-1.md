@@ -1,6 +1,6 @@
 # Entregable 1 — Diagnóstico y definición del problema
 **Proyecto:** Modernización WAN y continuidad operacional de Financiera Pacífico  
-**Versión:** 3.0 — borrador técnico de revisión, octubre de 2026  
+**Versión:** 4.0 — edición académica consolidada, octubre de 2026  
 **Horizonte:** cinco años  
 **Estado:** Documento de trabajo. Los supuestos de mercado, equipos y costos se validarán antes de cerrar E7.
 
@@ -169,3 +169,7 @@ Esta versión corrige problemas detectados en `2.0/entregable 1 .txt`: 21/22 suc
 - Starlink: [servicios de prioridad](https://starlink.com/business/service-plans) y [condiciones de prioridad en Chile](https://starlink.com/cl/support/article/d3dcd79f-c332-63e7-9204-3c3ec4f104ae). Los precios visibles dependen del país, volumen de datos y plan; no equiparar un precio de itinerancia residencial a contrato empresarial.
 
 **Consecuencia para este documento:** toda mención de ISR 4461, PA-850, sus módulos y sus precios debe leerse exclusivamente como **antecedente histórico del borrador anterior**, no como equipamiento de compra aprobado. Para el diseño de adquisición se adopta como **candidato Cisco Catalyst 8300 y Palo Alto PA-1400**; las cantidades de equipos siguen siendo hipótesis de dimensionamiento. Los costos basados en hardware retirado de venta **no representan el presupuesto definitivo**. El cierre financiero requiere cotización o escenarios explícitos con precios estimados para las familias nuevas.
+
+
+## Nota de cierre documental v4.0
+Este entregable integra el escenario académico de 23 sedes, distingue los hechos del caso original de las hipótesis del equipo y se considera **cerrado para la etapa de diseño documental**. El presupuesto de E7 es un modelo de escenarios, no una cotización vinculante. Amazon Leo sigue siendo disponibilidad futura hipotética. Entel 5G existe públicamente en Base Frei, pero su acceso WAN empresarial no está contratado. El prototipo y las mediciones de E6 quedan para la **etapa siguiente de implementación y pruebas del simulador**, sin resultados inventados. Las familias de adquisición son Catalyst 8300 y PA-1400, con licencias y compatibilidad pendientes de cotización. Las tablas históricas de E7 no deben usarse como presupuesto de compra.
