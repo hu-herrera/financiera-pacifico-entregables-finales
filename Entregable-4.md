@@ -1,5 +1,5 @@
 # Entregable 4 — Diseño de bajo nivel (LLD)
-**Financiera Pacífico | Versión 3.0 | Octubre 2026 | Documento de arquitectura conceptual**
+**Financiera Pacífico | Versión 4.0 | Octubre 2026 | Documento de arquitectura conceptual**
 
 ## 4.1 Alcance
 23 sedes: Casa Matriz y 22 sucursales. Red ANTES: 24 enlaces MPLS de 100 Mbps (2 CM, 22 sucursales). Red DESPUÉS: 0 MPLS y 0 OneWeb. Transportes previstos: Starlink, Amazon Leo (supuesto futuro), Entel 5G y GTD 4G/5G, sujetos a cobertura local. No se incluyen configuraciones ejecutables de equipos reales; se documentan decisiones y pruebas requeridas.
@@ -75,3 +75,7 @@ Validar capacidades de los equipos, vigencia comercial y soporte, cobertura de c
 - Starlink: [servicios de prioridad](https://starlink.com/business/service-plans) y [condiciones de prioridad en Chile](https://starlink.com/cl/support/article/d3dcd79f-c332-63e7-9204-3c3ec4f104ae). Los precios visibles dependen del país, volumen de datos y plan; no equiparar un precio de itinerancia residencial a contrato empresarial.
 
 **Consecuencia para este documento:** toda mención de ISR 4461, PA-850, sus módulos y sus precios debe leerse exclusivamente como **antecedente histórico del borrador anterior**, no como equipamiento de compra aprobado. Para el diseño de adquisición se adopta como **candidato Cisco Catalyst 8300 y Palo Alto PA-1400**; las cantidades de equipos siguen siendo hipótesis de dimensionamiento. Los costos basados en hardware retirado de venta **no representan el presupuesto definitivo**. El cierre financiero requiere cotización o escenarios explícitos con precios estimados para las familias nuevas.
+
+
+## Nota de cierre documental v4.0
+Este entregable integra el escenario académico de 23 sedes, distingue los hechos del caso original de las hipótesis del equipo y se considera **cerrado para la etapa de diseño documental**. El presupuesto de E7 es un modelo de escenarios, no una cotización vinculante. Amazon Leo sigue siendo disponibilidad futura hipotética. Entel 5G existe públicamente en Base Frei, pero su acceso WAN empresarial no está contratado. El prototipo y las mediciones de E6 quedan para la **etapa siguiente de implementación y pruebas del simulador**, sin resultados inventados. Las familias de adquisición son Catalyst 8300 y PA-1400, con licencias y compatibilidad pendientes de cotización. Las tablas históricas de E7 no deben usarse como presupuesto de compra.
