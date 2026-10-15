@@ -237,3 +237,11 @@ La [oferta de Entel Empresas](https://empresas.entel.cl/movil) menciona planes S
 
 ### Condición de aprobación financiera
 No existe evidencia suficiente para declarar un único TCO o payback «definitivo». Se conservan **escenarios numéricos trazables**, se invalidan afirmaciones de ahorro contractual y se exige precio empresarial chileno de hardware, licencias, soporte y conectividad antes de cerrar adquisiciones.
+
+
+## Corrección documentada: Entel 5G en Base Frei (15-10-2026)
+**Hecho verificado, no supuesto académico:** Entel inauguró una **red pública 5G en Villa Las Estrellas, Base Presidente Eduardo Frei Montalva, isla Rey Jorge**, en marzo de 2024. La Fuerza Aérea de Chile confirmó la puesta en marcha el 15-03-2024; Entel reportó continuidad operativa y uso de la red el 09-04-2026. Por tanto, la sede S22 **puede modelar Entel 5G como tercer acceso WAN candidato basado en cobertura pública existente**, sujeto a prueba de señal, compatibilidad del router/SIM, política de datos, capacidad y condiciones de contratación para tráfico empresarial.
+
+**Limitación de resiliencia:** Entel advierte que la salida de la red antártica hacia el continente es satelital. En consecuencia, no se debe presentar Entel 5G como diversidad física garantizada frente a Starlink o Amazon Leo: un evento de segmento satelital, energía o transporte podría afectar más de una ruta. Incluir en E6 un escenario de fallo correlacionado y distinguir *acceso radio 5G* de *backhaul satelital*. La existencia de cobertura pública no demuestra SLA, IP pública fija, velocidad garantizada ni un plan corporativo contratado.
+
+**Fuentes oficiales:** [Entel, despliegue 5G Antártica, 18-03-2024](https://informacioncorporativa.entel.cl/comunicados-de-prensa/la-compania-desplego-la-ultima-tecnologia-en-todo-el-territorio-entel-es-pionera-en-la-entrega-de-conectividad-5g-en-la-antartica); [Entel, dos años de 5G, 09-04-2026](https://informacioncorporativa.entel.cl/comunicados-de-prensa/instagram-facebook-y-tiktok-son-las-aplicaciones-mas-usadas-en-la-antartica); [FACH, 15-03-2024](https://fach.mil.cl/fuerza-aerea-de-chile-participo-en-la-puesta-en-marcha-de-la-red-de); [Entel, topología de red y transporte satelital](https://informacioncorporativa.entel.cl/robustez-red).
