@@ -51,3 +51,11 @@ Los siete entregables v3 están publicados. **Aún no son documentos definitivos
 Solo cambiar a «definitivo» después de que todas las partidas críticas estén respaldadas por fuentes o marcadas expresamente como supuestos de un escenario académico aceptado, que la aritmética esté conciliada, que la arquitectura tenga equipos viables y que E5/E6 separen claramente pruebas planificadas de resultados ejecutados.
 
 **No se han modificado el repositorio original ni el simulador.**
+
+
+## Actualización de avance — investigación de precios (15-10-2026)
+Se investigaron y añadieron en E7 referencias publicadas de Cisco Catalyst 8300, Cisco Catalyst 9200L y Palo Alto PA-1410, con enlaces y fecha. El subtotal nominal de hardware principal es **CLP 663.099.878** con USD/CLP hipotético de 950. El escenario de inversión inicial parcial asciende a **CLP 758.987.878** y **no incluye todos los rubros**. Por tanto, las cifras de TCO, ROI y payback de la versión anterior **no son conclusiones vigentes**.
+
+**Advertencia transversal para E1–E6:** el inventario por cantidades se conserva como hipótesis de dimensionamiento, pero donde aparezcan modelos ISR 4461 / PA-850 o el TCO antiguo deben considerarse sustituidos por las familias Catalyst 8300 / PA-1400 y por la advertencia financiera del E7 actualizado. El diseño detallado y las pruebas requieren comprobar interfaces, licencias, HA y PoE. No se han ejecutado pruebas de simulador ni cambiado el código.
+
+**Pendiente para versión realmente definitiva:** cotización empresarial chilena de los equipos y soporte por cinco años, verificación de tarifas de conectividad y cobertura por sede, valoración de Amazon Leo como escenario hipotético y recalcular TCO comparable con costos completos.
