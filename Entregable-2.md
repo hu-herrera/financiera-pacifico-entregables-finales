@@ -1,5 +1,5 @@
 # Entregable 2 — Evaluación de alternativas y decisión técnica
-**Financiera Pacífico | Versión 3.0 | Octubre 2026 | Estado: propuesta académica**
+**Financiera Pacífico | Versión 4.0 | Octubre 2026 | Estado: propuesta académica**
 
 ## 2.1 Problema y criterios
 Se evalúa la modernización de **23 sedes** (Casa Matriz + 22 sucursales). La situación ANTES contempla **24 enlaces MPLS de 100 Mbps**: dos en CM y uno por sucursal. La solución DESPUÉS elimina MPLS y OneWeb. Los requisitos de la ficha incluyen RTO de sucursal ≤5 min, cifrado, auditoría, seis sucursales de crecimiento y disponibilidad objetivo de 99,99% core/99,95% sucursales.
@@ -86,3 +86,7 @@ Se selecciona la **alternativa C como arquitectura objetivo del ejercicio**, con
 - Starlink: [servicios de prioridad](https://starlink.com/business/service-plans) y [condiciones de prioridad en Chile](https://starlink.com/cl/support/article/d3dcd79f-c332-63e7-9204-3c3ec4f104ae). Los precios visibles dependen del país, volumen de datos y plan; no equiparar un precio de itinerancia residencial a contrato empresarial.
 
 **Consecuencia para este documento:** toda mención de ISR 4461, PA-850, sus módulos y sus precios debe leerse exclusivamente como **antecedente histórico del borrador anterior**, no como equipamiento de compra aprobado. Para el diseño de adquisición se adopta como **candidato Cisco Catalyst 8300 y Palo Alto PA-1400**; las cantidades de equipos siguen siendo hipótesis de dimensionamiento. Los costos basados en hardware retirado de venta **no representan el presupuesto definitivo**. El cierre financiero requiere cotización o escenarios explícitos con precios estimados para las familias nuevas.
+
+
+## Nota de cierre documental v4.0
+Este entregable integra el escenario académico de 23 sedes, distingue los hechos del caso original de las hipótesis del equipo y se considera **cerrado para la etapa de diseño documental**. El presupuesto de E7 es un modelo de escenarios, no una cotización vinculante. Amazon Leo sigue siendo disponibilidad futura hipotética. Entel 5G existe públicamente en Base Frei, pero su acceso WAN empresarial no está contratado. El prototipo y las mediciones de E6 quedan para la **etapa siguiente de implementación y pruebas del simulador**, sin resultados inventados. Las familias de adquisición son Catalyst 8300 y PA-1400, con licencias y compatibilidad pendientes de cotización. Las tablas históricas de E7 no deben usarse como presupuesto de compra.
