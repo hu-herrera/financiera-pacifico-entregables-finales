@@ -59,3 +59,13 @@ Se investigaron y añadieron en E7 referencias publicadas de Cisco Catalyst 8300
 **Advertencia transversal para E1–E6:** el inventario por cantidades se conserva como hipótesis de dimensionamiento, pero donde aparezcan modelos ISR 4461 / PA-850 o el TCO antiguo deben considerarse sustituidos por las familias Catalyst 8300 / PA-1400 y por la advertencia financiera del E7 actualizado. El diseño detallado y las pruebas requieren comprobar interfaces, licencias, HA y PoE. No se han ejecutado pruebas de simulador ni cambiado el código.
 
 **Pendiente para versión realmente definitiva:** cotización empresarial chilena de los equipos y soporte por cinco años, verificación de tarifas de conectividad y cobertura por sede, valoración de Amazon Leo como escenario hipotético y recalcular TCO comparable con costos completos.
+
+
+## Avance de conectividad — 15-10-2026
+Se añadieron al E7 fuentes públicas de Starlink Business Fixed Site, Entel, GTD, Amazon Leo y un caso real de adjudicación Starlink Prioridad Global en una base antártica chilena distinta de Base Frei.
+
+**Corrección de unidad económica:** CLP 96.000.000 de Starlink / (24 terminales × 60 meses) = **CLP 66.666,67 mensuales por terminal**. Referencia internacional Starlink Business 500 GB: USD 155/mes, equivalentes a CLP 147.250/mes al tipo de cambio académico de 950. Para 24 terminales durante 60 meses: **CLP 212.040.000**; sensibilidad, **no** oferta en Chile. El caso antártico publicado es CLP 729.659 mensuales y no debe extrapolarse a otras ubicaciones.
+
+**Fuentes:** [Starlink Business](https://starlink.com/business/fixed-site), [Entel](https://www.entel.cl/comparador-de-planes), [GTD](https://www.gtd.cl/comparador), [licitación antártica](https://www.todolicitaciones.cl/licitacion/3268-31-LE26), [Amazon Leo](https://www.aboutamazon.com/news/amazon-leo/amazon-leo-satellite-internet-ultra-pro).
+
+**Pendiente:** matriz comercial por sede, cotizaciones formales y recálculo completo de CAPEX/OPEX/TCO; el estado «definitivo» sigue bloqueado por falta de evidencia.
